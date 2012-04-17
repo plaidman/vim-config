@@ -132,6 +132,12 @@ nnoremap <c-F12> :CtrlPBuffer<cr>
 nnoremap <leader>bl :CtrlPBuffer<cr>
 nnoremap <leader>lb :CtrlPBuffer<cr>
 
+" window commands
+nnoremap <leader>wq <c-w><c-q>
+nnoremap <leader>wv <c-w><c-v>
+nnoremap <leader>ws <c-w><c-s>
+nnoremap <leader>ww <c-w><c-w>
+
 "undo visualization <gundo>
 nnoremap <leader>u :GundoToggle<cr>
 
