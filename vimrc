@@ -79,9 +79,9 @@ vnoremap <leader>a <esc>ggVG
 nnoremap Y y$
 
 if exists('+colorcolumn')
-    set colorcolumn=80
+    set colorcolumn=120
 else
-    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+    au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
 
 "make x,X,<del> avoid overwriting registers
