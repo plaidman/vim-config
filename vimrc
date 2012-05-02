@@ -3,7 +3,7 @@ filetype plugin indent on
 
 colorscheme bclear
 
-set nocompatible                    "incompatible with vi
+set nocompatible                    "use the M part of VIM
 set encoding=utf-8                  "default file encoding
 set nomodeline                      "vim mode lines at the top of a file; read 0 of them
 set ttyfast                         "fast terminal mode (slow mode only updates certain lines)
