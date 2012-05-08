@@ -152,8 +152,8 @@ let g:neocomplcache_enable_underbar_completion = 1
 
 "tags for projects and files <ctags, tlist>
 set tags=./tags,tags;/
-nnoremap <leader>tl :Tlist<cr>
-nnoremap <leader>lt :Tlist<cr>
+nnoremap <leader>tl :TagbarToggle<cr>
+nnoremap <leader>lt :TagbarToggle<cr>
 
 noremap <s-up> <up>
 noremap <s-down> <down>
