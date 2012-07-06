@@ -141,17 +141,17 @@ nnoremap <leader>ww <c-w><c-w>
 "undo visualization <gundo>
 nnoremap <leader>u :GundoToggle<cr>
 
-"auto-completion <neocomplcache>
+"auto-completion 
+inoremap <c-space> <c-x><c-o>
 set completeopt=longest,menuone,preview
-inoremap <expr><c-space> neocomplcache#start_manual_complete()
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_disable_auto_complete = 1
-let g:neocomplcache_enable_underbar_completion = 1
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType tpl set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType js set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 "tags for projects and files <ctags, tlist>
-set tags=./tags,tags;/
+" set tags=./tags,tags;/
 nnoremap <leader>tl :TagbarToggle<cr>
 nnoremap <leader>lt :TagbarToggle<cr>
 
